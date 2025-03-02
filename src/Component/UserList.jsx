@@ -11,6 +11,7 @@ export default function UserList() {
   }, []);
 
   const cercaUtenti = user.filter(
+    // filtro per cercare gli utenti
     (u) => u.name && u.name.toLowerCase().includes(cerca.toLowerCase())
   );
 
